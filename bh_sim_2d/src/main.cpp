@@ -36,14 +36,14 @@ int main(){
 		"other",
 		SDL_WINDOWPOS_UNDEFINED,
 		SDL_WINDOWPOS_UNDEFINED,
-		width,		//width
-		height,		//height
+		width,
+		height,
 		SDL_WINDOW_SHOWN
 	);
 	SDL_Renderer *renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_SOFTWARE);
 	SDL_RenderClear(renderer);
 	if(window == NULL){
-		printf("shit");
+		printf("error at creating the window");
 		return 1;
 	}
 	
